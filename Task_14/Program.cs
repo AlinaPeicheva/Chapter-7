@@ -8,14 +8,14 @@ namespace Task_14
         {
             /* Да се напише програма, която намира най-дългата последователност
                от еднакви string елементи в матрица. Последователност в
-               матрица дефинираме като елементите са съседни и са на същия ред, колона или диагонал.*/
+               матрица дефинираме като елементите са съседни, са на същия ред, колона или диагонал.*/
 
             int tempSeq = 1, seq = 1;
             string element = "e";
 
-            Console.Write("Enter N: ");
+            Console.Write("Въведите N: ");
             int n = Int32.Parse(Console.ReadLine());
-            Console.Write("Enter M: ");
+            Console.Write("Въведите M: ");
             int m = Int32.Parse(Console.ReadLine());
 
             string[,] arr = new string[n, m];
@@ -23,7 +23,7 @@ namespace Task_14
             for (int i = 0; i < n; i++)
                 for (int j = 0; j < m; j++)
                 {
-                    Console.Write("Arr [{0}][{1}] = ", i, j);
+                    Console.Write("[{0}][{1}] = ", i, j);
                     arr[i, j] = Console.ReadLine();
                 }
 

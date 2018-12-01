@@ -6,9 +6,12 @@ namespace Task_21
     {
         public static int[] findSolution(int[] a, bool[] filter, int index, int s, int size)
         {
-            /*Напишете програма, която по дадени N, K и S намира К на брой елементи
+            /* Напишете програма, която по дадени N, K и S намира К на брой елементи
             измежду N-те числа, чиято сума е точно S или показва, че това е
             невъзможно. Пример: {3, 1, 2, 4, 9, 6}, S = 14, K = 3 → yes (1 + 4 + 9 = 14)*/
+
+            // нужно ввести количество чифр(N) - массив, потом задаёшь K(количество цифр котрые просуммируются, поставь 2, не ошибёшься),
+            // среди них должна быть неторая сумма, которую ты введёшь.
             if (index < a.Length)
             {
                 filter[index] = true;
@@ -49,10 +52,10 @@ namespace Task_21
 
         static void Main(string[] args)
         {
-            Console.Write("Enter N = ");
+            Console.Write("Въведите N = ");
             int n = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter K = ");
+            Console.Write("Въведите K = ");
             int size = int.Parse(Console.ReadLine());
 
             int[] arr = new int[n];
@@ -63,14 +66,14 @@ namespace Task_21
                 arr[i] = int.Parse(Console.ReadLine());
             }
 
-            Console.Write("Sum of elements, s = ");
+            Console.Write("Сума на елементите, s = ");
             int s = int.Parse(Console.ReadLine());
 
             int[] solution = findSolution(arr, new bool[arr.Length], 0, s, size);
 
-            Console.WriteLine("Your solution:");
+            Console.Write("Сумата {0} се образува от: ", s);
             for (int i = 0; i < solution.Length; i++) Console.Write(solution[i] + "; ");
-            Console.ReadLine();
-        }
+            Console.ReadLine(); 
+        } 
     }
 }

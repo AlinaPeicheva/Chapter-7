@@ -7,19 +7,22 @@ namespace Task_07
         static void Main(string[] args)
         {
             /* Да се напише програма, която чете от конзолата две цели числа N и K (K < N), както и 
-            масив от N елемента. Да се намерят тези K поредни елемента, които имат максимална сума. */
+            масив от N елемента. Да се намерят тези K поредни елемента, които имат максимална сума. 
+            ........................................................................................
+            1. Вводим N (будет длинной массива)
+            2. Вводим K (будет количеством наибольших чисел, которые проссумируются)*/
             int sum = 0;
 
-            Console.Write("Enter N: ");
+            Console.Write("Въведите N: ");
             int n = Int32.Parse(Console.ReadLine());
-            Console.Write("Enter K (K < N): ");
+            Console.Write("Въведите K (K < N): ");
             int k = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[n];
 
             for (int i = 0; i < n; i++)
             {
-                Console.Write("Enter {0} element: ", i);
+                Console.Write("Въведите {0} елемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 
@@ -27,7 +30,7 @@ namespace Task_07
 
             for (int i = 0; i < k; i++) sum += arr[i];
 
-            Console.WriteLine("\nBiggest sum is {0}", sum);
+            Console.WriteLine("Сумата на най-големите числа е {0}", sum);
         }
     }
 }

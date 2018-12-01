@@ -4,32 +4,34 @@ namespace Task_23
 {
     class Program
     {
-        /*Напишете програма, която прочита две цели числа N и K от конзолата
-и отпечатва всички вариации на K елементите на числата от интервала [1…N].
-Пример: N = 3, К = 2 → {1, 1}, {1, 2}, {1, 3}, {2, 1}, {2, 2}, {2, 3}, {3, 1}, {3, 2}, {3, 3} */
-
+         /* Напишете програма, която прочита две цели числа N и K от конзолата
+            и отпечатва всички вариации на K елементите на числата от интервала [1…N].
+            Пример: N = 3, К = 2 → {1, 1}, {1, 2}, {1, 3}, {2, 1}, {2, 2}, {2, 3}, {3, 1}, {3, 2}, {3, 3} 
+            
+             1. N - количество цифр из которых будут состояться числа
+             2. К - количество цифр в числе */
         public static int n;
 
         static void Main(string[] args)
         {
-            Console.Write("Enter N: ");
+            Console.Write("Въведите N: ");
             n = Int32.Parse(Console.ReadLine());
 
-            Console.Write("Enter K: ");
+            Console.Write("Въведите K: ");
             int k = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[k];
 
-            recSolution(arr, 0);
+            recSol(arr, 0);
         }
 
-        static void recSolution(int[] array, int index)
+        static void recSol(int[] array, int index)
         {
             if (index != array.Length)
                 for (int i = 1; i <= n; i++)
                 {
                     array[index] = i;
-                    recSolution(array, index + 1);
+                    recSol(array, index + 1);
                 }
             else
             {

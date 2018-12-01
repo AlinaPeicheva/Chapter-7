@@ -21,8 +21,9 @@ namespace Task_19
         static void Main(string[] args)
         {
             List<int> nums = new List<int>();
-            // 1 is not a prime number
-            for (int i = 2; i <= 10000000; ++i) nums.Add(i);
+            // 1 не е просто число
+            // зададеното числото много е голямо, за да не забий намалите границите на 'i' 
+            for (int i = 2; i <= 10000; ++i) nums.Add(i);
 
             int p = 2;
             int indexAt = 0;

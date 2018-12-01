@@ -7,32 +7,38 @@ namespace Task_03
         static void Main(string[] args)
         {
             /* Да се напише програма, която сравнява два масива от тип char лексикографски
-              (буква по буква) и проверява кой от двата е по - рано лексикографската подредба. */
-            bool arrayEqual = true;
-            char[] arrA = new char[5] { 'a', 'b', 'c', 'd', 'e' };
-            char[] arrB = new char[5] { 'a', 'b', 'c', 'd', 'e' };
+              (буква по буква) и проверява кой от двата е по-рано в лексикографската подредба. 
+          ............................................................................................................................................
+             Упътване: При лексикографската наредба символите се сравняват един по един като се започва от най-левия. 
+             При несъвпадащи символи по-рано е масивът, чийто текущ символ е по-рано в азбуката. 
+             При съвпадение се продължава със следващия символ вдясно. Ако се стигне до края на единия масив, по-краткият е лексикографски по-рано. 
+             Ако всички съответни символи от двата масива съвпаднат, то масивите са еднакви и никой о тях не е по-рано в лексикографската наредба.*/
 
-            if (arrA.Length > arrB.Length) Console.WriteLine("Second array is lexicographicaly first.");
-            else if (arrA.Length < arrB.Length) Console.WriteLine("First array is lexicographicaly first.");
+            bool massiv = true;
+            char[] arr1 = new char[6] { 'a', 'b', 'c', 'd', 'e', 'f' };
+            char[] arr2 = new char[6] { 'a', 'c', 'd', 'd', 'e', 'f' }; 
+
+            if (arr1.Length > arr2.Length) Console.WriteLine("Втория масив е по-рано в лексикографската подредба.");
+            else if (arr1.Length < arr2.Length) Console.WriteLine("Първия масив е по-рано в лексикографската подредба.");
             else
             {
-                for (int i = 0; i < arrA.Length; i++)
+                for (int i = 0; i < arr1.Length; i++)
                 {
-                    if (arrA[i] < arrB[i])
+                    if (arr1[i] < arr2[i])
                     {
-                        Console.WriteLine("First array is lexicographicaly first.");
-                        arrayEqual = false;
+                        Console.WriteLine("Първия масив е по-рано в лексикографската подредба.");
+                        massiv = false;
                         break;
                     }
-                    if (arrA[i] > arrB[i])
+                    if (arr1[i] > arr2[i])
                     {
-                        Console.WriteLine("Second array is lexicographicaly first.");
-                        arrayEqual = false;
+                        Console.WriteLine("Втория масив е по-рано в лексикографската подредба.");
+                        massiv = false;
                         break;
                     }
                 }
 
-                if (arrayEqual) Console.WriteLine("Arrays are lexicographicaly equal.");
+                if (massiv) Console.WriteLine("Масивите лексикографски се равни.");
             }
         }
     }

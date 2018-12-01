@@ -5,20 +5,22 @@ namespace Task_22
     class Program
     {
         static void Main(string[] args)
-        {   /*Напишете програма, която прочита от конзолата масив от цели числа и
-            премахва минимален брой числа, така че останалите числа да са
-            сортирани в нарастващ ред. Отпечатайте резултата.
-            Пример: {6, 1, 4, 3, 0, 3, 6, 4, 5} → {1, 3, 3, 4, 5}*/
+        {   /* Напишете програма, която прочита от конзолата масив от цели числа и премахва минимален брой числа, така че останалите числа да са
+            сортирани в нарастващ ред. Отпечатайте резултата. Пример: {6, 1, 4, 3, 0, 3, 6, 4, 5} → {1, 3, 3, 4, 5}
+            
+             1. Задай размер массива
+             2. Введите числа, они отсортируются так, что остануться числа которые повтаряються чаще и в восходящем образе*/
+
             int subset = 0, longestLength = 0;
 
-            Console.Write("Enter arr length: ");
+            Console.Write("Въведите дължината на массива: ");
             int length = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[length];
 
             for (int i = 0; i < length; i++)
             {
-                Console.Write("Enter {0} element: ", i);
+                Console.Write("Въведите {0} eлемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 
@@ -56,7 +58,7 @@ namespace Task_22
                 }
             }
 
-            Console.WriteLine("Result:");
+            Console.WriteLine("Резултат:");
             for (int i = 0; i < length; i++) if (subsets[subset, i] > 0) Console.Write(arr[i] + "; ");
         }
     }

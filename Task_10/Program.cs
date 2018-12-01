@@ -9,16 +9,16 @@ namespace Task_10
             /*Напишете програма, която намира най-често срещания елемент в
             масив. Пример: {4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3} → 4 (среща се 5 пъти).*/
 
-            int counter = 0, tempCounter = 1, foundNumber = 0;
+            int counter = 0, tempCoun = 1, foundNum = 0;
 
-            Console.Write("Enter array length: ");
+            Console.Write("Въведите дължината на масива: ");
             int length = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[length];
 
             for (int i = 0; i < length; i++)
             {
-                Console.Write("Enter {0} element: ", i);
+                Console.Write("Въведите {0} eлемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 
@@ -26,14 +26,16 @@ namespace Task_10
 
             for (int i = 0; i < length - 1; i++)
             {
-                if (arr[i] == arr[i + 1]) tempCounter++;
-                else tempCounter = 1;
-                if (tempCounter > counter)
+                if (arr[i] == arr[i + 1]) tempCoun++;
+                else tempCoun = 1;
+
+                if (counter < tempCoun)
                 {
-                    counter = tempCounter;
-                    foundNumber = arr[i];
+                    counter = tempCoun;
+                    foundNum = arr[i];
                 }
             }
+             Console.WriteLine("{0} се среща {1} пъти.", foundNum, counter);
         }
     }
 }

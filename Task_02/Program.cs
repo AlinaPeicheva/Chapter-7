@@ -10,43 +10,43 @@ namespace Task_02
             дали са еднакви(два масива са еднакви, когато имат еднаква
             дължина и елементите им, записани под едни и същи индекси, са еднакви).*/
 
-            bool arraysEqual = true;
+            bool massiv = true;
 
             Console.Write("Въведите дължината на първия масив: ");
             int length = Int32.Parse(Console.ReadLine());
 
-            int[] arrA = new int[length];
+            int[] arr1 = new int[length];
 
-            for (int i = 0; i < arrA.Length; i++)
+            for (int i = 0; i < arr1.Length; i++)
             {
-                Console.Write("Enter element {0}: ", i);
-                arrA[i] = Int32.Parse(Console.ReadLine());
+                Console.Write("Въведите елемент {0}: ", i);
+                arr1[i] = Int32.Parse(Console.ReadLine());
             }
 
             Console.Write("\nВъведите дължината на втория масив: ");
 
-            if (length != Int32.Parse(Console.ReadLine())) Console.WriteLine("\nArrays have different lengths.");
+            if (length != Int32.Parse(Console.ReadLine())) Console.WriteLine("\nМасивите имат различна дължина.");
             else
             {
-                int[] arrB = new int[length];
+                int[] arr2 = new int[length];
 
-                for (int i = 0; i < arrB.Length; i++)
+                for (int i = 0; i < arr2.Length; i++)
                 {
-                    Console.Write("Въведите елемент {0}: ", i);
-                    arrB[i] = Int32.Parse(Console.ReadLine());
+                    Console.Write("Въведите {0} елемент: ", i);
+                    arr2[i] = Int32.Parse(Console.ReadLine());
                 }
 
-                for (int i = 0; i < arrA.Length; i++)
+                for (int i = 0; i < arr1.Length; i++)
                 {
-                    if (arrA[i] != arrB[i])
+                    if (arr1[i] != arr2[i])
                     {
                         Console.WriteLine("\nМасививите се различни.");
-                        arraysEqual = false;
+                        massiv = false;
                         break;
                     }
                 }
 
-                if (arraysEqual) Console.WriteLine("\nМасивите се еднакви.");
+                if (massiv) Console.WriteLine("\nМасивите се еднакви.");
             }
 
         }

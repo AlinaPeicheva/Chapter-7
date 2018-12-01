@@ -11,13 +11,13 @@ namespace Task_04
 
             int count = 1, tempCount = 1, number = 0;
 
-            Console.Write("Enter array length: ");
+            Console.Write("Въведите дължината на масива: ");
             int length = Int32.Parse(Console.ReadLine());
             int[] arr = new int[length];
 
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.Write("Enter {0} element: ", i);
+                Console.Write("Въведите {0} елемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 

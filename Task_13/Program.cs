@@ -12,9 +12,9 @@ namespace Task_13
 
             int row = 0, col = 0, sum = -1000;
 
-            Console.Write("Enter N: ");
+            Console.Write("Въведите N (рядовете на матрицата): ");
             int n = Int32.Parse(Console.ReadLine());
-            Console.Write("Enter M: ");
+            Console.Write("Въведите M (стълбовете на матрицата): ");
             int m = Int32.Parse(Console.ReadLine());
 
             int[,] arr = new int[n, m];
@@ -22,7 +22,7 @@ namespace Task_13
             for (int i = 0; i < n; i++)
                 for (int j = 0; j < m; j++)
                 {
-                    Console.Write("Arr [{0}][{1}] = ", i, j);
+                    Console.Write("[{0}][{1}] = ", i, j);
                     arr[i, j] = Int32.Parse(Console.ReadLine());
                 }
 
@@ -41,11 +41,11 @@ namespace Task_13
                     }
                 }
 
-            Console.WriteLine("Result");
+            Console.WriteLine("Резултат");
             Console.WriteLine("{0} {1} {2}", arr[row, col], arr[row, col + 1], arr[row, col + 2]);
             Console.WriteLine("{0} {1} {2}", arr[row + 1, col], arr[row + 1, col + 1], arr[row + 1, col + 2]);
             Console.WriteLine("{0} {1} {2}", arr[row + 2, col], arr[row + 2, col + 2], arr[row + 2, col + 2]);
-            Console.WriteLine("The maximum sum is {0}.", sum);
+            Console.WriteLine("Максималната сумма е {0}.", sum);
         }
     }
 }
