@@ -13,9 +13,9 @@ namespace Task_14
             int tempSeq = 1, seq = 1;
             string element = "e";
 
-            Console.Write("Въведите N: ");
+            Console.Write("Въведете N: ");
             int n = Int32.Parse(Console.ReadLine());
-            Console.Write("Въведите M: ");
+            Console.Write("Въведете M: ");
             int m = Int32.Parse(Console.ReadLine());
 
             string[,] arr = new string[n, m];

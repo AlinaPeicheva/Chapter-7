@@ -11,14 +11,14 @@ namespace Task_08
             използва алгоритъма "selection sort". */
              int i, j, iMin, temp;
 
-             Console.Write("Въведите дължината на масив: ");
+             Console.Write("Въведете дължината на масив: ");
              int length = Int32.Parse(Console.ReadLine());
 
              int[] arr = new int[length];
 
              for (i = 0; i < length; i++)
              {
-                 Console.Write("Въведите {0} елемент: ", i);
+                 Console.Write("Въведете {0} елемент: ", i);
                  arr[i] = Int32.Parse(Console.ReadLine());
              }
 

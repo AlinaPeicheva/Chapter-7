@@ -12,9 +12,9 @@ namespace Task_13
 
             int row = 0, col = 0, sum = -1000;
 
-            Console.Write("Въведите N (рядовете на матрицата): ");
+            Console.Write("Въведете N (рядовете на матрицата): ");
             int n = Int32.Parse(Console.ReadLine());
-            Console.Write("Въведите M (стълбовете на матрицата): ");
+            Console.Write("Въведете M (стълбовете на матрицата): ");
             int m = Int32.Parse(Console.ReadLine());
 
             int[,] arr = new int[n, m];

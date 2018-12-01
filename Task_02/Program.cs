@@ -12,18 +12,18 @@ namespace Task_02
 
             bool massiv = true;
 
-            Console.Write("Въведите дължината на първия масив: ");
+            Console.Write("Въведете дължината на първия масив: ");
             int length = Int32.Parse(Console.ReadLine());
 
             int[] arr1 = new int[length];
 
             for (int i = 0; i < arr1.Length; i++)
             {
-                Console.Write("Въведите елемент {0}: ", i);
+                Console.Write("Въведете елемент {0}: ", i);
                 arr1[i] = Int32.Parse(Console.ReadLine());
             }
 
-            Console.Write("\nВъведите дължината на втория масив: ");
+            Console.Write("\nВъведете дължината на втория масив: ");
 
             if (length != Int32.Parse(Console.ReadLine())) Console.WriteLine("\nМасивите имат различна дължина.");
             else
@@ -32,7 +32,7 @@ namespace Task_02
 
                 for (int i = 0; i < arr2.Length; i++)
                 {
-                    Console.Write("Въведите {0} елемент: ", i);
+                    Console.Write("Въведете {0} елемент: ", i);
                     arr2[i] = Int32.Parse(Console.ReadLine());
                 }
 

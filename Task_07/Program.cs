@@ -13,16 +13,16 @@ namespace Task_07
             2. Вводим K (будет количеством наибольших чисел, которые проссумируются)*/
             int sum = 0;
 
-            Console.Write("Въведите N: ");
+            Console.Write("Въведете N: ");
             int n = Int32.Parse(Console.ReadLine());
-            Console.Write("Въведите K (K < N): ");
+            Console.Write("Въведете K (K < N): ");
             int k = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[n];
 
             for (int i = 0; i < n; i++)
             {
-                Console.Write("Въведите {0} елемент: ", i);
+                Console.Write("Въведете {0} елемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 

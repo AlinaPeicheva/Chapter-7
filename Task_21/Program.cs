@@ -52,10 +52,10 @@ namespace Task_21
 
         static void Main(string[] args)
         {
-            Console.Write("Въведите N = ");
+            Console.Write("Въведете N = ");
             int n = int.Parse(Console.ReadLine());
 
-            Console.Write("Въведите K = ");
+            Console.Write("Въведете K = ");
             int size = int.Parse(Console.ReadLine());
 
             int[] arr = new int[n];

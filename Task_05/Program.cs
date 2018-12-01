@@ -9,7 +9,7 @@ namespace Task_05
             /*Напишете програма, която намира максималната редица от последователни
               нарастващи елементи в масив. Пример: {3, 2, 3, 4, 2, 2, 4} → {2, 3, 4}.*/
 
-            Console.Write("Въведите дължината на масива: ");
+            Console.Write("Въведете дължината на масива: ");
             int length = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[length];
@@ -17,7 +17,7 @@ namespace Task_05
 
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.Write("Въведите {0} елемент: ", i);
+                Console.Write("Въведете {0} елемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 

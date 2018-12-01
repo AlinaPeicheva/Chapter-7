@@ -13,14 +13,14 @@ namespace Task_22
 
             int subset = 0, longestLength = 0;
 
-            Console.Write("Въведите дължината на массива: ");
+            Console.Write("Въведете дължината на массива: ");
             int length = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[length];
 
             for (int i = 0; i < length; i++)
             {
-                Console.Write("Въведите {0} eлемент: ", i);
+                Console.Write("Въведете {0} eлемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 

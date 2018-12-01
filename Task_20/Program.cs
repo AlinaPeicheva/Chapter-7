@@ -44,18 +44,18 @@ namespace Task_20
 
         static void Main()
         {
-            Console.Write("Въведите дължината на масива: ");
+            Console.Write("Въведете дължината на масива: ");
             int length = int.Parse(Console.ReadLine());
 
             int[] arr = new int[length];
 
             for (int i = 0; i < length; i++)
             {
-                Console.Write("Въведите {0} eлемент: ", i);
+                Console.Write("Въведете {0} eлемент: ", i);
                 arr[i] = int.Parse(Console.ReadLine());
             }
 
-            Console.Write("Въведите S: ");
+            Console.Write("Въведете S: ");
             wantedSum = int.Parse(Console.ReadLine());
 
             int[] subset = new int[length];

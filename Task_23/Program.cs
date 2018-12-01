@@ -14,10 +14,10 @@ namespace Task_23
 
         static void Main(string[] args)
         {
-            Console.Write("Въведите N: ");
+            Console.Write("Въведете N: ");
             n = Int32.Parse(Console.ReadLine());
 
-            Console.Write("Въведите K: ");
+            Console.Write("Въведете K: ");
             int k = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[k];

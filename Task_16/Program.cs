@@ -8,18 +8,18 @@ namespace Task_16
         {
             /*Да се реализира двоично търсене (binary search) в сортиран целочислен
               масив, за да открие конкретен елемент.*/
-            Console.Write("Въведите дължината на масива: ");
+            Console.Write("Въведете дължината на масива: ");
             int length = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[length];
 
             for (int i = 0; i < length; i++)
             {
-                Console.Write("Въведите {0} eлемент: ", i);
+                Console.Write("Въведете {0} eлемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 
-            Console.Write("Въведите търсяното число: ");
+            Console.Write("Въведете търсяното число: ");
             int number = Int32.Parse(Console.ReadLine());
 
             int index = Array.BinarySearch(arr, number);

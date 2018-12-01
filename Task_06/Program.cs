@@ -12,7 +12,7 @@ namespace Task_06
 
             int counter = 0, tempIndex, tempCounter;
 
-            Console.Write("Въведите дължината на масива: ");
+            Console.Write("Въведете дължината на масива: ");
             int length = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[length];
@@ -20,7 +20,7 @@ namespace Task_06
 
             for (int i = 0; i < length; i++)
             {
-                Console.Write("Въведите {0} елемент: ", i);
+                Console.Write("Въведете {0} елемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 

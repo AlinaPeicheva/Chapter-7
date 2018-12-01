@@ -13,14 +13,14 @@ namespace Task_09
 
             int sum = 0, tempSum;
 
-            Console.Write("Въведите дължината на масива: ");
+            Console.Write("Въведете дължината на масива: ");
             int length = Int32.Parse(Console.ReadLine());
 
             int[] arr = new int[length];
 
             for (int i = 0; i < length; i++)
             {
-                Console.Write("Въведите {0} eлемент: ", i);
+                Console.Write("Въведете {0} eлемент: ", i);
                 arr[i] = Int32.Parse(Console.ReadLine());
             }
 
